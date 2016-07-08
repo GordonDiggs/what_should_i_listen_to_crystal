@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>What Should I Listen To?</title>
+
+    <style type="text/css">
+      body {
+        background: black;
+        color: white;
+        font-family: Helvetica, sans-serif;
+        font-size: 24px;
+        padding-top: 50px;
+      }
+
+      a {
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <center>
+      <p>
+        You should listen to
+        <br />
+        <i><%= @item.title %></i>
+        <br />
+        by <%= @item.artist %>
+      </p>
+      <p>
+        <a href="<%= @item.url %>">Link</a>
+      </p>
+    </center>
+  </body>
+</html>
